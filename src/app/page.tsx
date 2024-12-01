@@ -28,6 +28,13 @@ const HomePage = () => {
             </div>
           </Link>
         </li>
+        <li>
+          <Link prefetch href="/partial-rendering">
+            <div className="text-blue-500 hover:underline">
+              partial-rendering
+            </div>
+          </Link>
+        </li>
       </ul>
     </main>
   );
