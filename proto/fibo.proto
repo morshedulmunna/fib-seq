@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package fibo;
+option go_package = "/proto";
+
+
+service FiboService {
+  rpc ComputeFibonacci (FiboRequest) returns (FiboResponse);
+}
+
+message FiboRequest {
+  int32 number = 1;
+}
+
+message FiboResponse {
+  int64 result = 1;
+}
